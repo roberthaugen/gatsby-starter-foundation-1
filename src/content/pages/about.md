@@ -19,6 +19,8 @@ I didn't ask for a completely reasonable excuse! I asked you to get busy! I neve
 2. Ah, computer dating. It's like pimping, but you rarely have to use the phrase "upside your head."
 3. You wouldn't. Ask anyway!
 
+![](/assets/mike-dorner-sf_1ZDA1YFw-unsplash.jpg)
+
 Bender, quit destroying the universe! No! The cat shelter's on to me. Enough about your promiscuous mother, Hermes! We have bigger problems. Fatal. I guess if you want children beaten, you have to do it yourself.
 
 I decline the title of Iron Cook and accept the lesser title of Zinc Saucier, which I just made up. Uhh… also, comes with double prize money. You mean while I'm sleeping in it? I don't want to be rescued.

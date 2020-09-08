@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Foundation",
+    "title": "Roberts portfolio",
     "titleTemplate": "%s",
     "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
-    "siteUrl": "https://foundation.stackrole.com",
-    "image": "/assets/stackrole.png",
+    "siteUrl": "https://portfolio-netlify-gatsby.netlify.app/",
+    "image": "/assets/83252770-hipster-icon-vector-flat-illustration-smiling-bearded-man-.jpg",
     "twitterUsername": "@stackrole"
   },
   "ga": "UA-XXXXXXXXX-X"
