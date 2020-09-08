@@ -57,8 +57,11 @@ collections:
         - {label: "Slug", name: "slug", widget: "hidden", default: "/" }
         - {label: "Heading", name: "title", widget: "string"}
         - {label: "Tagline", name: "tagline", widget: "string"}
+        - {label: "Second Tagline", name: "secondtag", widget: "string"}
         - {label: "Featured Image", name: "featuredImage", widget: "image"}
+        - {label: "Image for bodytext", name: "fatImage", widget: "image"}
         - {label: "Body", name: "body", widget: "markdown"}
+        
         - label: "CTA"
           name: "cta"
           widget: "object"
@@ -69,6 +72,7 @@ collections:
             - name: "ctaLink"
               label: "CTA Link"
               widget: "string"
+      
       - label: "About"
         name: "about"
         file: "src/content/pages/about.md"

@@ -15,6 +15,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         tagline
+        secondtag
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 480, maxHeight: 380, quality: 80, srcSetBreakpoints: [960, 1440]) {
@@ -22,6 +23,13 @@ export const pageQuery = graphql`
             }
             sizes {
               src
+            }
+          }
+        }
+        fatImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -38,15 +46,20 @@ const HomePage = ({ data }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   const Image = frontmatter.featuredImage ? frontmatter.featuredImage.childImageSharp.fluid : ""
+  const FatImage = frontmatter.fatImage ? frontmatter.fatImage.childImageSharp.fluid : ""
 	return (
 		<Layout>
       <SEO/>
       <div className="home-banner grids col-1 sm-2">
         <div>
-          <h1 class="title">{frontmatter.title}</h1>
+          
           <p class="tagline">{frontmatter.tagline}</p>
-          <div className="description" dangerouslySetInnerHTML={{__html: html}}/>
+          <p class="second">{frontmatter.secondtag}</p>
+          <h1 class="title">{frontmatter.title}</h1>
           <Link to={frontmatter.cta.ctaLink} className="button">{frontmatter.cta.ctaText}<span class="icon -right"><RiArrowRightSLine/></span></Link>
+          
+         
+          
         </div>
         <div>
           {Image ? (
@@ -56,6 +69,14 @@ const HomePage = ({ data }) => {
               className="featured-image"
             />
           ) : ""}
+        </div>
+        <div>
+        <div className="description" dangerouslySetInnerHTML={{__html: html}}/>
+        </div>
+        <div>
+        <Img fluid={FatImage} 
+        className="featured-image"
+        />
         </div>
       </div>
       <BlogListHome/>
